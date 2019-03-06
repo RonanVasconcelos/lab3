@@ -24,12 +24,12 @@ public class Driver {
             piece.move();
         }
 
-        ((Pawn) pawn).promote(rook); 
+        ((Pawn) pawn).promote(king); 
 
         Pawn newPawn = new Pawn();
-        System.out.println(newPawn.equals(rook)); 
+        System.out.println(newPawn.equals(pawn)); 
 
-        ((Pawn) bishop).promote(rook); 
-        System.out.println(newPawn.equals(queen));
+        ((Pawn) pawn).promote(knight); 
+        System.out.println(newPawn.equals(pawn));
     }
 }
